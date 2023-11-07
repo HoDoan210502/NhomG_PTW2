@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     Admin
                 </a>
                 <div class="sidebar-toggle-box">
-                    <div class="fa fa-bars"></div>
+                    <div class="fa fa-bars" style="color: #181b1f"></div>
                 </div>
             </div>
             <!--logo end-->

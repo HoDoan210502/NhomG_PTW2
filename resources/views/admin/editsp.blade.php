@@ -27,7 +27,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Product's Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" value="{{$pro->product_name}}" Name" name="spname">
+                        <input type="text" class="form-control" id="exampleInputEmail1" maxlength="200" value="{{$pro->product_name}}" Name" name="spname">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Categories</label>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Product's Price</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" value="{{$pro->product_price}}" name="spprice">
+                        <input type="number" class="form-control" id="exampleInputEmail1" maxlength="200" value="{{$pro->product_price}}" name="spprice">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Status</label>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Product's Description</label>
-                        <textarea style="resize: none" type="password" rows="8" class="form-control" id="exampleInputPassword1" name="spdesc">{{$pro->product_desc}}</textarea>
+                        <textarea style="resize: none" maxlength="200" type="password" rows="8" class="form-control" id="exampleInputPassword1" name="spdesc">{{$pro->product_desc}}</textarea>
                     </div>
 
                     <button type="submit" name="updatesp" class="btn btn-info">Save Product</button>

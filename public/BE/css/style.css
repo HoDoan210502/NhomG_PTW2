@@ -13,7 +13,7 @@ html, body{
 	font-family: 'Roboto', sans-serif;
     font-size: 100%;
     overflow-x: hidden;
-    background: url(../images/bg.jpg) no-repeat 0px 0px;
+    background: url(../images/wp2508260.jpg) no-repeat 0px 0px;
 	background-size:cover;
 }
 body a{
@@ -219,7 +219,7 @@ ul.sidebar-menu li a.active i {
     left:0;
     right:0;
     z-index:1002;
-    background:rgb(240, 188, 180);
+    background:#181b1f;
     -webkit-transition:all .3s ease-in-out;
     -moz-transition:all .3s ease-in-out;
     -o-transition:all .3s ease-in-out;
@@ -239,7 +239,7 @@ ul.sidebar-menu li a.active i {
     width:100%;
 }
 .brand {
-    background:#8b5c7e;
+    background:#181b1f;
     float:left;
     width:240px;
     height:80px;
@@ -257,7 +257,7 @@ a.logo:hover,a.logo:focus {
     outline:none;
 }
 a.logo span {
-    color: #FF6C60;
+    color: #181b1f;
 }
 /*notification*/
 #top_menu .nav>li,ul.top-menu>li {
@@ -506,8 +506,8 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     padding: 0px;
     background: none;
     margin-right: 0;
-    border: 1px solid #8b5c7e;
-    background: #8b5c7e;
+    border: 1px solid #181b1f;
+    background: #181b1f;
 }
 .top-nav ul.top-menu>li.language>a {
     margin-top:-2px;
@@ -528,8 +528,8 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     margin-left:10px;
 }
 .top-nav ul.top-menu>li>a:hover,.top-nav ul.top-menu>li>a:focus {
-    border:1px solid #fa9fa4;
-    background:#fa9fa4 !important;
+    border:1px solid aqua;
+    background:aqua !important;
     border-radius:100px;
     -webkit-border-radius:100px;
 }
@@ -572,25 +572,25 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    border: 1px solid #8b5c7e;
+    border: 1px solid black;
     box-shadow: none;
-    background: #8b5c7e url(../images/search-icon.png) no-repeat 10px 8px;
+    background: black url(../images/search-icon.png) no-repeat 10px 8px;
     padding: 0 5px 0 30px;
-    color: #fff;
+    color: black;
     border-radius: 100px;
     -webkit-border-radius: 100px;
 	cursor:pointer;
 }
 .search:focus {
     width:180px;
-    border:1px solid #8b5c7e;
+    border:1px solid #181b1f;
     box-shadow:none;
     -webkit-transition:all .3s ease;
     -moz-transition:all .3s ease;
     -ms-transition:all .3s ease;
     -o-transition:all .3s ease;
     transition:all .3s ease;
-    color:#c8c8c8;
+    color:black;
     font-weight: 300;
 }
 .todo-search:focus{
@@ -601,7 +601,7 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
     float:left;
     margin-top:23px;
     margin-left:-15px;
-    background:#8b5c7e;
+    background: white;
     border-radius:50%;
     -webkit-border-radius:50%;
     width:32px;
