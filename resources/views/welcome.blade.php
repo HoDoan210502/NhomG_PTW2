@@ -348,6 +348,7 @@
 	<!-- /SECTION -->
 
 	<!-- SECTION -->
+	<hr>
 	<div class="section">
 		<!-- container -->
 		<!-- SECTION -->
@@ -426,7 +427,89 @@
 		<!-- /SECTION -->
 		<!-- /container -->
 	</div>
+	<hr>
 	<!-- /SECTION -->
+
+	<!--Khuyen mai  -->
+	<div class="section">
+		<!-- container -->
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container" id="hotdeal">
+				<!-- row -->
+				<div class="row">
+					<!-- ASIDE -->
+					<div id="aside" class="col-md-3">
+						<!-- aside Widget -->
+						<div class="aside">
+							<br>
+							<h3 class="aside-title">Sale Product</h3>
+						</div>
+						<!-- /aside Widget -->
+					</div>
+					<!-- /ASIDE -->
+
+					<!-- STORE -->
+					<div id="store" class="col-md-12">
+						<!-- store products -->
+						<div class="row">
+							@foreach($product as $key => $pro3)
+							{{ csrf_field() }}
+							<!-- product -->
+							<div class="col-md-4 col-xs-6">
+								<div class="product">
+									<div class="product-img">
+										<img src="{{URL::to('public/uploads/product/'.$pro3->product_image)}}" alt="">
+										<div class="product-label">
+											<span class="sale">-30%</span>
+											<span class="new">NEW</span>
+										</div>
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">{{$pro3->product_name}}</a></h3>
+										<h4 class="product-price">{{$pro3->product_price}} VND</h4>
+										<div class="product-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="product-btns">
+											<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+											<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+											<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+										</div>
+									</div>
+									<div class="add-to-cart">
+										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><a href="{{URL::to('/detail/'.$pro3->product_id)}}"> add to cart</a></button>
+									</div>
+								</div>
+							</div>
+							@endforeach
+							<!-- /product -->
+							<div class="clearfix visible-lg visible-md visible-sm visible-xs"></div>
+
+
+							<!-- /product -->
+						</div>
+						<!-- /store products -->
+
+						<!-- store bottom filter -->
+						{{ $product->links('pagination::bootstrap-4', ['prev_text' => '', 'next_text' => '']) }}
+						<!-- /store bottom filter -->
+					</div>
+					<!-- /STORE -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+		<!-- /container -->
+	</div>
+	<!--Khuyen mai  -->
 
 	<!-- HOT DEAL SECTION -->
 	<div id="hot-deal" class="section">
