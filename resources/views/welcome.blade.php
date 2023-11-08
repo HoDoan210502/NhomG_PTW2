@@ -80,9 +80,9 @@
 								<select class="input-select">
 									<option value="0">All Categories</option>
 								</select>
-									{{ csrf_field() }}
-									<input class="input" placeholder="Search here" name="keyword">
-									<input type="submit" name="search_item" id="" class="search-btn" value="Search">
+								{{ csrf_field() }}
+								<input class="input" placeholder="Search here" name="keyword">
+								<input type="submit" name="search_item" id="" class="search-btn" value="Search">
 							</form>
 						</div>
 					</div>
@@ -165,12 +165,11 @@
 				<!-- NAV -->
 				<ul class="main-nav nav navbar-nav">
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Hot Deals</a></li>
-					<li><a href="#catehere">Categories</a></li>
+					<li><a href="#catehere">All Products</a></li>
+					<li><a href="#hotdeal">Hot Products</a></li>
 					<li><a href="#">Sneaker</a></li>
-					<li><a href="#">Smartphones</a></li>
-					<li><a href="#">Cameras</a></li>
-					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Sport</a></li>
+					<li><a href="#">Sandals</a></li>
 				</ul>
 				<!-- /NAV -->
 			</div>
@@ -354,7 +353,7 @@
 		<!-- SECTION -->
 		<div class="section">
 			<!-- container -->
-			<div class="container" id="catehere">
+			<div class="container" id="hotdeal">
 				<!-- row -->
 				<div class="row">
 					<!-- ASIDE -->
@@ -487,7 +486,7 @@
 						<div class="section-nav">
 							<div id="slick-nav-3" class="products-slick-nav"></div>
 						</div>
-						
+
 					</div>
 
 					<div class="products-widget-slick" data-nav="#slick-nav-3">
@@ -495,7 +494,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product07.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -508,7 +507,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('/FE/img/product08.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -521,7 +520,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product09.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -536,7 +535,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product01.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -549,7 +548,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product02.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -562,7 +561,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product03.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -588,7 +587,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product04.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -601,7 +600,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('/FE/img/product05.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -614,7 +613,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product06.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -629,7 +628,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product07.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -642,7 +641,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product08.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -655,7 +654,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product09.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -683,7 +682,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product01.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -696,7 +695,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product02.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -709,7 +708,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product03.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -724,7 +723,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product04.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -737,7 +736,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product05.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -750,7 +749,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product06.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -830,11 +829,11 @@
 						<div class="footer">
 							<h3 class="footer-title">Categories</h3>
 							<ul class="footer-links">
-								<li><a href="#">Hot deals</a></li>
-								<li><a href="#">Laptops</a></li>
-								<li><a href="#">Smartphones</a></li>
-								<li><a href="#">Cameras</a></li>
-								<li><a href="#">Accessories</a></li>
+								<li><a href="#catehere">All Products</a></li>
+								<li><a href="#hotdeal">Hot Products</a></li>
+								<li><a href="#">Sneaker</a></li>
+								<li><a href="#">Sport</a></li>
+								<li><a href="#">Sandals</a></li>
 							</ul>
 						</div>
 					</div>
