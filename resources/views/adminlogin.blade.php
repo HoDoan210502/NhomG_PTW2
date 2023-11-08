@@ -46,11 +46,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			?>
 			<form action="{{URL::to('/admin-dashboard')}}" method="post">
 				{{csrf_field()}}
-				<input type="text" class="ggg" name="admin_email" placeholder="E-MAIL" required="">
-				<input type="password" class="ggg" name="admin_password" placeholder="PASSWORD" required="">
-
-				<span><input type="checkbox" />Remember Me</span>
-				<h6><a href="#">Forgot Password?</a></h6>
+				<input type="email" class="ggg" name="admin_email" placeholder="E-MAIL" required="" maxlength="200">
+				<input type="password" class="ggg" name="admin_password" placeholder="PASSWORD" required="" maxlength="200">
 				<div class="clearfix"></div>
 				<input type="submit" value="Sign In" name="login">
 			</form>

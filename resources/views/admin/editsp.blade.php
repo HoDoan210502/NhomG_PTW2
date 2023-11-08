@@ -22,7 +22,7 @@
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="exampleInputEmail1">Product's Image</label>
-                        <input type="file" class="form-control" id="exampleInputEmail1" name="spimage">
+                        <input type="file" class="form-control" id="spimage" name="spimage" onchange="validateFileType(this)" accept=".png, .jpg">
                         <img src="{{URL::to('public/uploads/product/'.$pro->product_image)}}" alt="" width="80px" height="80px">
                     </div>
                     <div class="form-group">
@@ -69,4 +69,29 @@
         </div>
     </section>
 </div>
+<script>
+    document.getElementById('spimage').addEventListener('change', function () {
+        var fileInput = document.getElementById('spimage');
+        var filePath = fileInput.value;
+        var allowedExtensions = /(\.png|\.jpg)$/i;
+        
+        if (!allowedExtensions.exec(filePath)) {
+            alert('Chỉ được chọn tệp có đuôi .png hoặc .jpg.');
+            fileInput.value = ''; // Xóa giá trị trường nhập file
+        }
+    });
+    function validateForm() {
+        var spimage = document.getElementById('spimage');
+        var saveButton = document.getElementById('saveButton');
+
+        if (spimage.files.length === 0) {
+            alert('Bạn phải chọn một hình ảnh sản phẩm.');
+            return false;
+        }
+
+        // Bỏ vô hiệu hóa nút "Save Product" nếu hình ảnh đã được chọn
+        saveButton.disabled = false;
+        return true;
+    }
+</script>
 @endsection

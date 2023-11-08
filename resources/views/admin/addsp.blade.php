@@ -21,7 +21,7 @@
                     {{csrf_field()}}
                     <div class="form-group">
                         <label for="exampleInputEmail1">Product's Image</label>
-                        <input type="file" class="form-control" id="spimage" name="spimage">
+                        <input type="file" class="form-control" id="spimage" name="spimage" onchange="validateFileType(this)" accept=".png, .jpg" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Product's Name</label>
@@ -37,7 +37,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Manufacturer</label>
+                        <label for "exampleInputPassword1">Manufacturer</label>
                         <select name="product_manu" class="form-control m-bot15">
                             @foreach($manu_product as $key => $manu)
                             <option value="{{($manu->manu_id)}}">{{($manu->manu_name)}}</option>
@@ -56,7 +56,7 @@
                             <option value="1">Hide</option>
                         </select>
                     </div>
-                    <div class "form-group">
+                    <div class="form-group">
                         <label for="exampleInputPassword1">Product's Description</label>
                         <textarea type="password" rows="8" class="form-control" id="spdesc" maxlength="200" placeholder="Description" name="spdesc"></textarea>
                     </div>
@@ -89,6 +89,14 @@
         }
 
         return isValid;
+    }
+
+    function validateFileType(input) {
+        var allowedExtensions = /(\.png|\.jpg)$/i;
+        if (!allowedExtensions.exec(input.value)) {
+            alert('Chỉ được chọn tệp có đuôi .png hoặc .jpg.');
+            input.value = '';
+        }
     }
 </script>
 @endsection
