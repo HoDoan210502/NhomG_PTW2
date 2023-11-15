@@ -79,6 +79,14 @@
 							<form action="{{URL::to('/search')}}" method="POST">
 								<select class="input-select">
 									<option value="0">All Categories</option>
+									@foreach($category as $key => $pro)
+									<div>
+										<p></p>
+										<a href="{{URL::to('/category-list/'.$pro->category_id)}}">
+											<option class="fa fa-check" aria-hidden="true">{{$pro->category_name}}</option>
+										</a>
+									</div>
+									@endforeach
 								</select>
 								{{ csrf_field() }}
 								<input class="input" placeholder="Search here" name="keyword">
