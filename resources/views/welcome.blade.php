@@ -129,8 +129,14 @@
 										<h5>SUBTOTAL: $2940.00</h5>
 									</div>
 									<div class="cart-btns">
-										<a href="#">View Cart</a>
-										<a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+										<form action="{{URL::to('/to-cart')}}" method="POST">
+											{{ csrf_field() }}
+											<button href="#">View Cart</button>
+										</form>
+										<form action="{{URL::to('/checkout')}}" method="POST">
+											{{ csrf_field() }}
+											<button href="#">Checkout <i class="fa fa-arrow-circle-right"></i></button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -577,7 +583,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product01.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -590,7 +596,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product02.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -603,7 +609,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product03.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -618,7 +624,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product04.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -631,7 +637,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product05.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -644,7 +650,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product06.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -670,7 +676,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product07.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -683,7 +689,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product08.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -696,7 +702,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product01.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -711,7 +717,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product02.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -724,7 +730,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product08.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -737,7 +743,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product06.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -765,7 +771,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product05.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -778,7 +784,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product08.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -791,7 +797,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product07.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -806,7 +812,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product05.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -819,7 +825,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product03.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -832,7 +838,7 @@
 							<!-- product widget -->
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="{{asset('FE/img/product02.png')}}" alt="">
+									<img src="{{asset('FE/img/OIP.png')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
